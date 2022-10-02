@@ -6,9 +6,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 
-private const val TAG = "DetailActivity"
+private const val TAG = "MovieDetailActivity"
 
-class DetailActivity : AppCompatActivity() {
+class MovieDetailActivity : AppCompatActivity() {
     private lateinit var mediaImageView: ImageView
     private lateinit var titleTextView: TextView
     private lateinit var rateTextView: TextView
@@ -18,7 +18,7 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+        setContentView(R.layout.detail_movie)
 
         // TODO: Find the views for the screen
         mediaImageView = findViewById(R.id.mediaImage)

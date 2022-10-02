@@ -6,13 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/topMovieText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Rated Movies"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/articles"
+        android:id="@+id/topMovieRecyclerView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="280dp"
+        android:paddingTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/topMovieText" />
+
+    <TextView
+        android:id="@+id/topTvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Rated TVs"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/topMovieRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topTvRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topTvText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
