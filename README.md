@@ -4,7 +4,7 @@ Submitted by: **Shuwei Feng**
 
 **Flixster+ Part2** is a movie browsing app that allows users to browse ... [TODO] 
 
-Time spent: **10** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] **Add another API call and RecyclerView that lets the user interact with different data.** 
+- [X] **Add another API call and RecyclerView that lets the user interact with different data.** 
 - [ ] **Add rounded corners to the images using the Glide transformations**
 - [ ] **Implement a shared element transition when user clicks into the details of a movie**
 
